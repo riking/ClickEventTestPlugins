@@ -1,3 +1,5 @@
+package me.riking.test;
+
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.event.Event.Result;
 import org.bukkit.event.inventory.InventoryClickEvent;
