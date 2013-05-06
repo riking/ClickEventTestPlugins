@@ -35,6 +35,7 @@ public class DonateModeChest extends JavaPlugin implements Listener {
                     e.setResult(Result.DENY);
                 }
                 break;
+            case NOTHING:
             case PLACE_ALL:
             case PLACE_SOME:
             case PLACE_ONE:
