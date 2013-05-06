@@ -1,0 +1,3 @@
+name: TestPlugin-DonateModeChest
+main: me.riking.test.DonateModeChest
+version: 1

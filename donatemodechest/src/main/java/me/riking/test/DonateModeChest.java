@@ -2,12 +2,14 @@ package me.riking.test;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.event.Event.Result;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 
 public class DonateModeChest extends JavaPlugin implements Listener {
     public void onEnable() {
-        getPluginManager().registerEvents((Listener)this, this);
+        getServer().getPluginManager().registerEvents((Listener)this, this);
     }
 
     public void onDisable() {

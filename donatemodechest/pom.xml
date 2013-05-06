@@ -2,7 +2,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.riking.tests</groupId>
     <artifactId>donatemode</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>TestPlugin-DonateChest</name>
     <build>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -40,4 +39,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <parent>
+    	<groupId>me.riking.test</groupId>
+    	<artifactId>clickplugins</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    	<relativePath>..</relativePath>
+    </parent>
 </project>
