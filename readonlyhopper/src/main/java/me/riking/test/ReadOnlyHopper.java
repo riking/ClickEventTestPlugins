@@ -79,6 +79,7 @@ public class ReadOnlyHopper extends JavaPlugin implements Listener {
             if (v.convertSlot(slot) == slot) { // top inventory is returned unchanged
                 System.out.println("Slot " + slot + " is bad");
                 e.setResult(Result.DENY);
+                return;
             } else {
                 System.out.println("Slot " + slot + " is okay");
             }
