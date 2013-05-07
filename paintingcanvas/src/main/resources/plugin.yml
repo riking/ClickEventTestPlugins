@@ -1,0 +1,11 @@
+name: TestPlugin-PaintingCanvas
+main: me.riking.test.PaintingCanvas
+version: 1
+commands:
+  paint:
+    description: Open a painting canvas!
+    usage: /paint
+    permission: test.paintingcanvas.use
+permissions:
+  test.paintingcanvas.use:
+    default: true

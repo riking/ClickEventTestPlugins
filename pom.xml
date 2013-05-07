@@ -20,6 +20,8 @@
   <modules>
   	<module>donatemodechest</module>
   	<module>readonlyhopper</module>
+  	
+  	<module>creativenodiamond</module>
   </modules>
   <dependencyManagement>
   	<dependencies>
