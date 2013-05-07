@@ -20,6 +20,7 @@ public class DonateModeChest extends JavaPlugin implements Listener {
         if (e.getView().getType() != org.bukkit.event.inventory.InventoryType.CHEST) {
             return;
         }
+        System.out.println(e.getAction());
         switch (e.getAction()) {
             case PICKUP_ALL:
             case PICKUP_SOME:
@@ -54,6 +55,7 @@ public class DonateModeChest extends JavaPlugin implements Listener {
                 return;
             case COLLECT_TO_CURSOR:
                 if (e.getView().getTopInventory().contains(e.getCursor().getType())) {
+                    System.out.println("Denying collect");
                     e.setResult(Result.DENY);
                 }
                 break;

@@ -38,7 +38,9 @@ public class ReadOnlyHopper extends JavaPlugin implements Listener {
             case PLACE_DRAG_EVEN:
             case UNKNOWN:
                 // Bottom half only
+                System.out.println("Checking slot...");
                 if (e.getRawSlot() == e.getSlot()) { // exploit InventoryView contract
+                    System.out.println("Denying click");
                     e.setResult(Result.DENY);
                 }
                 break;
@@ -72,9 +74,13 @@ public class ReadOnlyHopper extends JavaPlugin implements Listener {
         }
         // Bottom half only
         InventoryView v = e.getView();
+        System.out.println("Checking all slots from drag");
         for (int slot : e.getRawSlots()) {
             if (v.convertSlot(slot) == slot) { // top inventory is returned unchanged
+                System.out.println("Slot " + slot + " is bad");
                 e.setResult(Result.DENY);
+            } else {
+                System.out.println("Slot " + slot + " is okay");
             }
         }
         return;
